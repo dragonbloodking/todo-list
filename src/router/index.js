@@ -3,6 +3,7 @@ import TodoList from '../components/TodoList.vue'
 import FocusMode from '../components/FocusMode.vue'
 import Login from '../components/Login.vue'
 import Register from '../components/Register.vue'
+import Notes from '../components/Notes.vue'
 
 const routes = [
   {
@@ -15,6 +16,12 @@ const routes = [
     path: '/focus',
     name: 'FocusMode',
     component: FocusMode,
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/notes',
+    name: 'Notes',
+    component: Notes,
     meta: { requiresAuth: true }
   },
   {

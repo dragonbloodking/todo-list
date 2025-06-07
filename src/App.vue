@@ -5,6 +5,7 @@
       <div class="nav-menu">
         <router-link to="/" class="nav-item">待办事项</router-link>
         <router-link to="/focus" class="nav-item">专注模式</router-link>
+        <router-link to="/notes" class="nav-item">我的笔记</router-link>
         <div class="user-menu">
           <span class="username">{{ currentUser.username }}</span>
           <button @click="handleLogout" class="logout-btn">退出</button>
